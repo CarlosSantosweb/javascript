@@ -17,7 +17,8 @@
         function text() {
             var txtv = document.querySelector('input#txtvel')
             var res = document.querySelector('div#res')
-            res.innerHTML = `<p>Sua Nacionalidade é <strong>${txtv}</strong></p>.`
+            var vel = text()
+            res.innerHTML = `<p>Sua Nacionalidade é <strong>${vel}</strong></p>.`
             if (vel > 60) {
                 res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade!`
             }
