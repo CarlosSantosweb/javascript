@@ -7,8 +7,8 @@
     <title>Nacionalidade</title>
 </head>
 <body>
-    <h1>Qual é seu Pais</h1>
-    Nacionalidade <input type="text" name="txtvel" id="txtvel">
+    <h1>Qual é seu pais de Origem?</h1>
+    Digitar aqui seu pais de origem <input type="text" name="txtvel" id="txtvel">
     <input type="button" value="Verificar" onclick="text()">
     <div id="res">
 
@@ -17,12 +17,16 @@
         function text() {
             var txtv = document.querySelector('input#txtvel')
             var res = document.querySelector('div#res')
-            var vel = text()
-            res.innerHTML = `<p>Sua Nacionalidade é <strong>${vel}</strong></p>.`
-            if (vel > 60) {
-                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade!`
+            var n1 = Number(txtv.value)
+            res.innerHTML = `<p>Sua Nacionalidade é <strong>${n1}</strong></p>.`
+
+            if (n1 >= Brasil) {
+                res.innerHTML += `<p>Você Brasileiro</p>!`
+
+            }else {
+
             }
-            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+            res.innerHTML += `<p>Sua nacionalidade </p>`
         }
     </script>
 </body>
