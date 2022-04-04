@@ -11,9 +11,9 @@
     <section>
         <div>
             <h1>Login</h1>
-            Digite seu Nome: <input type="text" name="textnam" id="txtnam"> <br><br>
-            Digite sua Senha: <input type="number" name="txtvel" id="txtvel"><br><br>
-            <input class="bot" type="button" value="Verificar" onclick="Senha()">
+            Digite seu E-mail: <input type="textema" name="textema" id="txtema"><br><br>
+            Digite sua Senha: <input type="password" name="txtvel" id="txtvel"><br><br>
+            <input type="button" value="Entrar" onclick="Senha()">
         </div>
         <div id="res">
     </section>
@@ -25,7 +25,7 @@
             var res = document.querySelector('div#res')
             var vel = Number(txtv.value)
             if (vel == 0) {
-                res.innerHTML = `<p>Digite sua senha <strong>(OBRIGATÓRIO)!!!</strong></p>`
+                res.innerHTML = `<p>Preencha os campos acima é <strong>(OBRIGATÓRIO)!!!</strong></p>`
             }else {
                 alert('Senha Válida!!!')
             }
