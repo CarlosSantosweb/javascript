@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 body {
-    background: rgb(70, 142, 236);
+    padding: 200px;
+    background: rgba(181, 219, 109, 0.733);
     font:  normal 15pt Arial;
 }
 
@@ -11,17 +12,15 @@ header {
 
 }
 
+h1 {
+    text-align: center;
+}
+
 section {
-    background: white;
+    background: rgba(67, 191, 212, 0.829);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
-}
-
-footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
 }
